@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    boz-sizing: border-box;
+}
+
+
+body {
+    background-color: #004F87;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    font-family: 'Poppins', sans-serif;
+
+
+}
+
+.informations {
+    background-color: #004F87;
+    height: 380px;
+    width: 350px;
+}
+
+.div_img_logo {
+    height: 100px;
+    width: 350px;
+
+}
+
+.informations-login {
+    width: 350px;
+    height: 280px;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 7px;
+    position: relative;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7)
+}
+
+.informations-login form {
+    position: absolute;
+    top: 20px
+}
+
+.informations-login form .password {
+    margin-top: 30px
+}
+
+
+
+.footer {
+    width: 300px;
+    position: absolute;
+    top: 180px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column
+   }
+
+.informations-login label {
+    color: #113d70;
+    font-size: 12px;
+    margin-top: 10px;
+
+}
+
+.informations-login input {
+    display: block;
+    font-weight: bold;
+    color: black;
+}
+
+.usuario-and-password {
+    width: 290px;
+    margin-top: 1px;
+    padding:0 5px;
+    background-color: transparent;
+    border:none;
+    border-bottom: 1px solid #113d70;
+    outline: none;
+    color: #fff;
+}
+
+.msg-login-invalido {
+    font-size: 10px;
+    color: #ad0007;
+    position: absolute;
+    top: 115px;
+    font-weight:bold;
+}
+
+select {
+    margin-top: 30px;
+    border: 1px solid #ccc;
+    width: 100%;
+    padding: 3px 8px;
+    color: #333;
+    border-radius: 3px
+
+}
+
+.footer button {
+    padding: 8px 60px;
+    background-color: gray;
+    opacity: 0.6;
+    border: none;
+    border-radius: 5px;
+    font-weight:bold;
+    color: black;
+    font-size: 13px
+}
+
+.footer a {
+    text-align: center;
+    text-decoration: none;
+    color: #113d70; /*white*/
+    font-size: 13px;
+    margin-top: 16px
+}
+

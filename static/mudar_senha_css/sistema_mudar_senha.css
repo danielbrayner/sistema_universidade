@@ -1,0 +1,129 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container-grande {
+    display: flex;
+    height: 100%;
+}
+
+
+.barra-lateral-esquerda {
+    width: 5%;
+    background-color: #f0f0f0;
+    transition: width 0.6s;
+}
+
+.container-direito {
+    flex: 1;
+    background-color: #ccc;
+    transition: width 0.6s;
+    margin-left: 7px;
+}
+
+
+.barra-lateral-esquerda:hover {
+    width: 22%;
+}
+
+..barra-lateral-esquerda:hover + .container-direito {
+    flex: 2;
+}
+
+
+
+
+
+
+.container_mudar_senha {
+    height: 100%;
+    margin-top: 90px;
+    background-color: #e5e5e5;
+    width: 100%
+}
+
+
+.container_mudar_senha h3 {
+    padding-top: 20px;
+    margin: 0px 0 0 4%;
+    font-size: 20px
+}
+
+.container_mudar_senha p {
+    margin: 20px 0 0 4%;
+    font-size: 13px
+}
+
+.container_mudar_senha .barra_divisoria{
+    border-bottom: 1px solid #bbbbbb;
+    margin: 15px 10% 4% 3%
+}
+
+
+.form-nova-senha {
+    margin-left: 4%;
+}
+
+.input-single {
+    position: relative;
+    margin: 50px 0 0 0;
+}
+
+.input-single label {
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    transition: all 0.2s;
+    cursor: text;
+}
+
+.input {
+    width: 400px;
+    border: 0;
+    background-color: #e5e5e5;
+    border-bottom: 2px solid #004F87;
+    font-size: 17px;
+    outline: 0
+}
+
+.form-nova-senha .input-single .input:focus ~ label,
+.form-nova-senha .input-single .input:valid ~ label {
+    transform: translateY(-24px);
+    font-size: 12px;
+    color: #505050;
+}
+
+.form-nova-senha .msg-error {
+    margin:4px 0 0 0;
+    color: #ad0007;
+    font-size: 11px;
+}
+
+.form-nova-senha .msg-success {
+    color: #097024;
+    font-size: 11px;
+    margin:4px 0 0 0;
+}
+
+.btn {
+    width: 100%;
+}
+
+.form-nova-senha input[type=submit] {
+    padding: 7px 35px;
+    border: 0;
+    border-radius: 7px;
+    background-color: #004F87;
+    color: #fff;
+    cursor: pointer;
+    margin-left: 149px;
+    margin-top: 60px;
+}
+
+
+
+
+

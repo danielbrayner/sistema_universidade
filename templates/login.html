@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='login.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,300;1,400&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <div class="informations">
+        <div class="div_img_logo">
+            <img src="{{ url_for('static', filename='/img/logo_uni_branco.png') }}" alt="Logo Uni">
+        </div>
+        <div class="informations-login">
+            <form method="post">
+                <div class="usuario">
+                   <label for="usuario">Usuário</label>
+                   <input type="text" name="usuario" id="usuario" autocomplete="off" class="usuario-and-password">
+                </div>
+                <div class="password">
+                   <label for="password">Senha</label>
+                   <input type="password" name="password" id="password" autocomplete="off" class="usuario-and-password">
+                </div>
+                <div class="msg-login-invalido">
+                    <p>{{ login_digitado }}</p>
+                </div>
+                <div>
+                    <select name="opcao">
+                        <option selected="" disabled="">Selecione</option>
+                        <option value="opcao_aluno_online">Aluno Online</option>
+                        <option value="opcao_docente_online">Docente Online</option>
+                    </select>
+                </div>
+                <div class="footer">
+                        <button type="submit" value="Entrar">Entrar</button>
+                    <a href="#">Esqueceu a senha?</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

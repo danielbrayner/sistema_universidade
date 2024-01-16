@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Avaliação</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='barra_superior/barra_superior_info.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='docente_css/sistema_docente_turmas.css') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,300;1,400&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <div class="container-grande">
+
+        {% include '/docente_html/barra_lateral_docente.html' %}
+
+        <div class="container-direito">
+            <div class="informacao-usuario">
+                <img src="{{ url_for('static', filename='/img/imagem_perfil_sem_foto.jpg') }}" alt="Perfil">
+                <ul>
+                    <li>Docente: {{ docente }}</li>
+                    <li>Matricula: {{ matricula }}</li>
+                </ul>
+                <ul>
+                    <li>Curso: {{ curso }}</li>
+                    <li>E-mail: {{ email }}</li>
+                </ul>
+                <a href="/">
+                    <span class="icon"><i class="bi bi-box-arrow-left"></i></span>
+                    <span class="txt-link">Sair</span>
+
+                </a>
+            </div>
+
+
+
+            <div class="container-turmas_docente">
+                <div id="container-geral-lista-disciplinas_docente" class="container-interno-sistema-avaliacao_docente"></div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <script>
+        // Recupere a lista de nomes do Python passada para o template
+        var nomes = {{ lista_disciplinas_docente | safe }};
+
+        // Recuperando a lista de cod_turma e seus respectivos alunos obtidos via python
+        var lista_cod_turma_e_nome_disciplina_e_seus_respectivos_alunos_e_id_notas = {{ lista_alunos_cada_disciplina | safe }};
+    </script>
+
+
+    <script src="{{ url_for('static', filename='script_turmas_docente.js') }}"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
+

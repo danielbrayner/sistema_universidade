@@ -1,0 +1,45 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container-grande {
+    display: flex;
+    height: 100%;
+}
+
+
+.barra-lateral-esquerda {
+    width: 5%;
+    background-color: #f0f0f0;
+    transition: width 0.6s;
+}
+
+.container-direito {
+    flex: 1;
+    background-color: #ccc;
+    transition: width 0.6s;
+    margin-left: 7px;
+}
+
+
+.barra-lateral-esquerda:hover {
+    width: 22%;
+}
+
+..barra-lateral-esquerda:hover + .container-direito {
+    flex: 2;
+}
+
+.navigation:hover + .container-direito .informacao-aluno a {
+    background-color:red;
+}
+
+
+.container-avaliacao_intitucional_docente {
+    width: 100%;
+    height: 100%;
+    margin-top: 90px;
+}

@@ -1,0 +1,85 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #e5e5e5;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.container-grande {
+    display: flex;
+    height: 100%;
+}
+
+
+.barra-lateral-esquerda {
+    width: 5%;
+    background-color: #f0f0f0;
+    transition: width 0.6s;
+}
+
+.container-direito {
+    flex: 1;
+    background-color: #ccc;
+    transition: width 0.6s;
+    margin-left: 7px;
+}
+
+
+.barra-lateral-esquerda:hover {
+    width: 22%;
+}
+
+..barra-lateral-esquerda:hover + .container-direito {
+    flex: 2;
+}
+
+.navigation:hover + .container-direito .informacao-aluno a {
+    background-color:red;
+}
+
+.container-avaliacao {
+    width: 100%;
+    height: 100%;
+    margin-top: 90px;
+    background-color: #e5e5e5;
+
+}
+
+
+.container-avaliacao .container-interno-sistema-avaliacao {
+    margin: 90px;
+    padding-top: 15px;
+}
+
+.div-lista-disciplinas {
+    width: 100%;
+    height: 70px;
+    border-radius: 7px;
+    margin-top: 30px;
+    background-color: #004F87;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: height 0.5s; /* Transição suave de altura */
+    color: #fff
+
+}
+
+.div-lista-disciplinas:hover {
+    cursor: pointer
+}
+
+.informacoes-disciplina {
+    display: block;
+    width: 80%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 15px;
+}

@@ -1,0 +1,175 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #ccc;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container-grande {
+    display: flex;
+    height: 100%;
+}
+
+
+.barra-lateral-esquerda {
+    width: 5%;
+    background-color: #f0f0f0;
+    transition: width 0.6s;
+}
+
+.container-direito {
+    flex: 1;
+    transition: width 0.6s;
+    margin-left: 7px;
+}
+
+
+.barra-lateral-esquerda:hover {
+    width: 22%;
+}
+
+..barra-lateral-esquerda:hover + .container-direito {
+    flex: 2;
+
+
+}
+
+.navigation:hover + .container-direito .informacao-aluno a {
+    background-color:red;
+}
+
+.container-turmas_docente {
+    width: 100%;
+    margin-top: 90px;
+    /*background-color: #e5e5e5;*/
+}
+
+.container-interno-sistema-avaliacao_docente {
+    margin: 90px;
+    padding-top: 15px;
+
+}
+
+.div-lista-disciplinas_docente {
+    width: 100%;
+    height: 70px;
+    border-radius: 7px;
+    margin-top: 30px;
+    background-color: #004F87;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: height 0.5s; /* Transição suave de altura */
+    color: #fff;
+
+}
+
+
+.div-lista-disciplinas_docente:hover {
+    cursor: pointer
+}
+
+.informacoes-disciplina_docente {
+    display: block;
+    width: 90%;
+    height: 50%;
+    margin-top: 30px;
+}
+
+.informacao-cod-turma {
+    font-size: 12px;
+    margin: 5px 0 0 10px;
+}
+
+
+.divInformacoesNomeNp1Np2Np3 {
+    display: flex;
+}
+
+.divInformacoesNomeNp1Np2Np3 div {
+    flex: 1;
+    margin: 0 6px; /* Adicione margens entre as divs conforme necessário */
+}
+
+.divInformacoesNomeNp1Np2Np3 div:first-child {
+    flex: 0 0 55%;
+}
+
+.divInformacoesNomeNp1Np2Np3 div:nth-child(5) {
+    flex: 0 0 13%;
+}
+
+
+.lista-alunos :first-child {
+    margin-top: 20px;
+}
+
+.nota-docente_lancar_np1 :first-child {
+    margin-top: 30px;
+
+}
+
+.nota-docente_lancar_np2 :first-child {
+    margin-top: 30px;
+
+}
+
+.nota-docente_lancar_np3 :first-child {
+    margin-top: 30px;
+
+}
+
+.cod-nota-aluno {
+    color: #FFF;
+    padding-left: 15px;
+}
+
+.cod-nota-aluno :first-child  {
+    margin-top: 20px;
+}
+
+.button-fechar-div {
+    background-color: transparent;
+    border: none;
+}
+
+.button-fechar-div i {
+    font-size: 35px;
+    color: #FFF;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.divInformacoesNomeNp1Np2Np3 p {
+    width: 100%;
+    height: 20px;
+    padding: 10px 0;
+}
+
+.divInformacoesNomeNp1Np2Np3 input {
+    width: 80%;
+    margin: 10px 0;
+
+}
+
+.buttonAtualizarNotas {
+    padding: 5px;
+    margin: 25px 0 20px 0;
+    cursor: pointer;
+    background-color: #FFF;
+    color:#004F87;
+    border-radius: 5px;
+    text-decoration: none;
+    border: none;
+    transition: 0.7s;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
+}
+
+.buttonAtualizarNotas:hover {
+    background-color: #c0c0c0
+}
+

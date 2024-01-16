@@ -1,0 +1,30 @@
+<div class="container_mudar_senha">
+                <h3>
+                    Alteração de senha
+                </h3>
+                <p>
+                    Sua senha deve conter no mínimo 8 e no máximo 20 caracteres.
+                </p>
+                <div class="barra_divisoria"></div>
+
+                <form method="post", class="form-nova-senha">
+                    <div class="input-single">
+                        <input type="password" name="senha-atual" id="senha-atual" class="input" autocomplete="off" required>
+                        <label for="senha-atual">Digite sua senha atual</label>
+                    </div>
+                    <div class="input-single">
+                        <input type="password" name="nova-senha" id="nova-senha" class="input" autocomplete="off" required>
+                        <label for="nova-senha">Digite sua nova senha</label>
+                    </div>
+                    <div class="input-single">
+                        <input type="password" name="confirme-senha" id="confirme-senha" class="input" autocomplete="off" required>
+                        <label for="confirme-senha">Confirme sua nova senha</label>
+                    </div>
+                    <p class="msg-error">{{ msg_error }}</p>
+                    <p class="msg-success">{{ msg_success }}</p>
+
+                    <div class="btn">
+                        <input type="submit" value="Alterar">
+                    </div>
+                </form>
+            </div>
